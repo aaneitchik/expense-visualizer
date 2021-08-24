@@ -5,7 +5,7 @@
 		const response = await fetch('/api/sheet');
 
 		if (response.ok) {
-			const { sheet } = await response.json();
+			const { sheet }: { sheet: string } = await response.json();
 			return { props: { sheet } };
 		}
 
@@ -16,8 +16,8 @@
 	};
 </script>
 
-<script>
-	export let sheet;
+<script lang="ts">
+	export let sheet: string;
 </script>
 
 <h1>Welcome to SvelteKit</h1>
