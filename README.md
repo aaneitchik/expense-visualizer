@@ -1,4 +1,4 @@
-# Expenses visualizer
+# Expense visualizer
 
 ## Developing
 
